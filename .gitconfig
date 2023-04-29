@@ -1,0 +1,72 @@
+[user]
+    name = Aaron Fogel
+    email = aaron.m.fogel@gmail.com
+
+[core]
+    # Set the default branch to 'main'
+    defaultBranch = main
+
+    # Set the maximum allowed file path length to 260 characters
+    path = (MAX_PATH)
+
+    # Enable long paths support on Windows
+    longpaths = true
+
+[alias]
+    # Set some useful Git aliases
+    co = checkout
+    br = branch
+    ci = commit
+    st = status
+    unstage = reset HEAD --
+    last = log -1 HEAD
+    lg = log --pretty=format:'%C(yellow)%h%Creset %Cgreen[%ad]%Creset %s%C(red)%d%Creset %Cblue[%an]%Creset' --decorate --date=format:'%Y-%m-%d %H:%M:%S'
+
+[diff "java"]
+    # Set Java-specific diff settings
+    xfuncname = "^\\(public\\|private\\|protected\\)\\ [a-zA-Z0-9_]+\\((.*)\\)"
+
+[diff "javascript"]
+    # Set JavaScript-specific diff settings
+    xfuncname = "^\\(function\\|class\\)\\ ([a-zA-Z0-9_]+)"
+
+[diff "python"]
+    # Set Python-specific diff settings
+    xfuncname = "^\\(def\\|class\\)\\ ([a-zA-Z0-9_]+)"
+
+[diff "powershell"]
+    # Set PowerShell-specific diff settings
+    xfuncname = "^function\\ ([a-zA-Z0-9_]+)"
+
+[diff "csharp"]
+    # Set C#-specific diff settings
+    xfuncname = "^\\(public\\|private\\|protected\\)\\ ([a-zA-Z0-9_]+)\\("
+
+[diff "ruby"]
+    # Set Ruby-specific diff settings
+    xfuncname = "^\\(def\\)\\ ([a-zA-Z0-9_]+)"
+
+[diff "scala"]
+    # Set Scala-specific diff settings
+    xfuncname = "^\\(def\\)\\ ([a-zA-Z0-9_]+)"
+
+[diff "bash"]
+    # Set Bash-specific diff settings
+    xfuncname = "^function\\ ([a-zA-Z0-9_]+)"
+
+[diff "zsh"]
+    # Set Zsh-specific diff settings
+    xfuncname = "^function\\ ([a-zA-Z0-9_]+)"
+
+[diff "fish"]
+    # Set Fish-specific diff settings
+    xfuncname = "^function\\ ([a-zA-Z0-9_]+)"
+
+[remote "origin"]
+    # Set the upstream repository URL
+    url = https://github.com/amf08006/opensourcesecuritymaster.git
+    fetch = +refs/heads/*:refs/remotes/origin/*
+
+[credential]
+    # Set the Git credential helper to use the Windows Credential Manager
+    helper = manager-core

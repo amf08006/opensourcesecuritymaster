@@ -1,0 +1,36 @@
+# Java
+*.class
+
+# Package Files
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# IntelliJ
+*.iml
+.idea/
+*.ipr
+*.iws
+
+# JavaScript / Node.js
+**/node_modules/
+npm-debug.log
+yarn-error.log
+yarn.lock
+
+# macOS
+.DS_Store
